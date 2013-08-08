@@ -179,6 +179,8 @@ class Civ5FileReader(object):
 
         print self.read_int(), "3?"
         print self.read_int(), "1?"
+        print self.read_int(), ""   # fixing alignment
+        print self.read_int(), ""   # fixing alignment
         print self.read_int(), "15?"
         print self.read_int(), "5?"
 
@@ -188,6 +190,7 @@ class Civ5FileReader(object):
         print self.read_int(), "3"
 
         print self.read_int(), "4"
+
         # -1 loss
         # 0 time
         # 1 science
@@ -215,6 +218,7 @@ class Civ5FileReader(object):
         print self.read_int(), "0"
 
         n_events = self.read_int()
+
         print n_events, "?"
         entities = self.read_int()
         print entities, "number of entities"
